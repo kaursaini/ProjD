@@ -19,6 +19,7 @@ The project will also expose some of the Map APIs in Google's cloud platform.
     S5: SIS Report Generator
     Generate a report from a Student Information System filtered based on a name prefix, a major, and a minimum GPA. The output is sorted on a custom column.
 
+## Database
 The web app fetch the data from the local database (running on the same machine as the webapp). Its data can be accessed via the following specs:
     Protocol: jdbc//derby.
     Host: localhost.
@@ -27,11 +28,13 @@ The web app fetch the data from the local database (running on the same machine 
     Credentials: as in Project-B.
     Table: SIS.
     Columns: SURNAME, GIVENNAME, MAJOR, COURSES, and GPA
-    
-Filter -- October.java  
+
+## Filter
+October.java  
     Block the Ride service completely by serving a page that informs the user that this service is not available with a link to the Dashboard.
     Block any request for sorting in the SIS service. If any sorting is requested then serve a page that informs the user that this sorting is not available with a link to the Dashboard.
 
-Listener -- Monitor.java 
+## Listener 
+Monitor.java 
     Determine the percentage of times the Drone service is used.
     Determine the likelihood that a user will use both S3 and S4.
