@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body {
+	background-color: #262626;
+	font-family: sans-serif;
+}
+
+h1 {
+	color: black;
+	font-size: 3em;
+	margin: 10px;
+}
+
+h2 {
+	color: black;
+	font-size: 2em;
+	margin: 10px;
+}
+
+div#content {
+	margin: auto;
+	width: 500px;
+	border: 5px solid gold;
+	border-radius: 10px;
+	background-color: white;
+}
+
+div#content * {
+	text-align: center;
+}
+
+div#forms {
+	margin-bottom: 20px;
+}
+
+input[type="submit"] {
+	color: white;
+	background-color: #3399ff;
+	margin: 5px;
+	width: 12em;
+	height: 2.5em;
+	font-size: 25px;
+	border-radius: 12px;
+	border-color: #3399ff;
+	border-style: solid;
+}
+
+input[type="submit"]:hover {
+	background-color: #0066ff;
+	border-color: #0066ff;
+}
+
+input[type="submit"]:active {
+	background-color: blue;
+	border-color: blue;
+}
+
+input[type="number"] {
+	color: black;
+	background-color: white;
+	margin: 2px;
+	width: 7em;
+	height: 1em;
+	font-size: 25px;
+	border-color: black;
+	border-style: solid;
+}
+
+#error {
+	color: red;
+}
+
+#result {
+	color: blue;
+}
+
+h5#dashLink {
+	text-align: left;
+	margin: 3px;
+}
+
+table {
+	border: 2px solid black;
+}
+
+tr {
+	border: 2px solid black;
+}
+
+td {
+	border: 2px solid black;
+}
