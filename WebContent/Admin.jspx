@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" version="2.0">
+	<jsp:directive.page contentType="text/html; charset=UTF-8"
+		pageEncoding="UTF-8" session="true" />
+	<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+	<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Admin</title>
+<link href="styles/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div id="content">
+		<h5 id="dashLink">
+			<a href="Dash.do">Dashboard</a>
+		</h5>
+		<h1>Admin</h1>
+		<hr />
+
+		<h3>Total Usage: ${totalUsage}</h3>
+		<h3>Drone Usage: ${droneUsage}</h3>
+		<h3>
+			Drone Usage Percentage:
+			<fmt:formatNumber value="${dronePercent}" maxFractionDigits="0" />%
+		</h3>
+		<hr />
+		
+		<h3>Total Sessions: ${totalSessions}</h3>
+		<h3>Total Drone and Ride: ${sessionDroneRide}</h3>
+		<h3>
+			Likelihood of User using Drone and Ride:
+			<fmt:formatNumber value="${droneRidePercent}" maxFractionDigits="0" />%
+		</h3>
+
+	</div>
+</body>
+	</html>
+</jsp:root>
